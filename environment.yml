@@ -1,0 +1,28 @@
+name: fastapi_project
+channels:
+  - defaults
+dependencies:
+  - python
+  - fastapi
+  - uvicorn
+  # Add other dependencies for databases
+  - pydantic
+  - sqlalchemy
+  - python-dotenv
+
+  # Add other dependencies  for password hashing
+  - cryptography
+
+  # Add other dependencies for oauth JWT
+  - passlib==1.7.4
+  - python-jose==3.3.0
+  - python-jose
+
+# ---------------------------------------------------------------
+
+  # execute the following to install the dependancies:
+    # conda env create -f environment.yml
+
+
+  # execute the following command to update the dependancies installation:
+    # conda env update -f environment.yml --prune
